@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Menu calories</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="menu.css" />
+    <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="headerfooter.css" />
+
+</head>
+
+<header>
+    <div>
+        <a href="\index.html" style="float: right;">Sign out</a>
+        </br>
+        <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WellnessWays</b>
+        </br></br>
+        <a class="hovernav" href="\menu.html">Menu calories</a>
+        <a class="hovernav" href="\homepage.html">Home</a>
+        <a class="hovernav" href="\bmi.html">BMI</a>
+        <a class="hovernav" href="\myprofile.html">My profile</a>
+    </div>
+    </header>
+
+<body>
+        <div class="container initial">
+            <form id="searchForm">
+                <input type="text" id="searchInput" placeholder="Search Your Recipe...">
+                <button type="submit" aria-label="" onclick = "initializeSearch() " class="search-button">
+                    <img src="searchicon.png" alt="Search">
+                  </button>                  
+                
+            </form>            
+
+            <div class="search-result">
+                <div class="item">
+                    <img src="menucover.png" alt="">
+                    <div class="flex-container">
+                        <h1 class="title">Search food menus to see calories</h1>
+                        <a class="view-btn" href="#">View Recipe</a>
+                    </div>
+                    <p class="item-data">Calories: ?</p>
+                </div>
+            </div>
+        </div>
+    
+
+    <script src="menuquery.js" defer></script>
+</body>
+
+<footer>
+    makkasan &copy; CP456 Software Engineer
+</footer>
+
+</html>

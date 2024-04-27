@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+    <header>
+        <div>
+            </br>
+            <!--<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WellnessWays</b> -->
+            <b>WellnessWays</b>
+            </br></br>
+        </div>
+    </header>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img class="img-login " src="img/image7.jpg ">
+                <div class="col-md-6 "></div>
+            </div>
+            <div class="col-md-6 main"> <!-- Corrected class name -->
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+                    <button type="button" onclick="submitForm()" class="btn btn-primary">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        function submitForm() {
+            var formData = {
+                email: document.getElementById('email').value,
+                password: document.getElementById('password').value
+            };
+        
+            fetch('/index', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            })
+            .then(response => {
+                if (response.ok) {
+                    window.location.href = '/homepage.html';
+                } else {
+                    throw new Error('Invalid email or password');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Invalid email or password'); // Show alert for invalid credentials
+            });
+        }
+    </script>
+   
+</body>
+
+</html>

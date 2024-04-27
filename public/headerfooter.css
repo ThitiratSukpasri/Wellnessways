@@ -1,0 +1,132 @@
+/*---------------------------------------- headder&footer allpage ----------------------------------------*/
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+header {
+    background-color: #EAE2D6;
+    width: 100%vw;
+    padding: 1rem;
+    /* align-items: center; */
+}
+
+body {
+    background-color: #F8F3ED;
+    text-align: center;
+}
+
+footer {
+    /* position: absolute;*/
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #EAE2D6;
+    height: 12%;
+    background-color: #EAE2D6;
+    /* Optional background color */
+    /*position: absolute;
+        /* Ensures footer stays at the bottom */
+    bottom: 0;
+    /* Positions footer at the bottom edge */
+    width: 100%;
+    /* Stretches footer to full width */
+    text-align: center;
+    /* Horizontally centers content */
+    /* Optional: Center content vertically (adjust padding if needed) */
+    padding: 2% 0;
+    /* Creates vertical space for centering */
+    display: flex;
+    /* Enables flexbox for vertical centering */
+    justify-content: center;
+    /* Horizontally centers content within footer */
+    align-items: center;
+    /* Vertically centers content within footer */
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    margin: 0 20px;
+    padding: 8px 10px;
+    align-items: center;
+}
+.hovernav:hover{
+    background-color: #33BCA3;
+    border-radius: 7px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+/*a:hover {
+    background-color: #33BCA3;
+    border-radius: 7px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}*/
+
+
+b {
+    color: #33BCA3;
+    font-size: 40px;
+}
+
+c {
+    color: black;
+    text-decoration: none;
+    margin: 0 20px;
+    padding: 8px;
+}
+
+c:hover {
+    background-color: #ea4984;
+    border-radius: 7px;
+    color: rgb(2, 1, 1);
+}
+
+
+/*---------------------------------------- end: headder&footer allpage ----------------------------------------*/
+/*--------------------------------------------homepage---------------------------------------------------------*/
+.conainer-textbox {
+    font-family: 'Mitr', sans-serif;
+    width: 240px;
+    padding: 5px;
+    border: 1px solid rgb(123, 119, 113);
+    border-radius: 40px;
+    background-color: rgb(253, 223, 188);
+    box-shadow: 2px 2px;
+}
+
+.circle-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    /* กำหนดเส้นรอบรูปให้มีรูปร่างเป็นวงกลม */
+    object-fit: cover;
+}
+
+.carouselpage {
+    font-family: 'Mitr', sans-serif;
+    margin-right:130px;
+    display: inline-block;
+
+}
+.conainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-family: 'Mitr', sans-serif;
+    text-align: center;
+
+}
+.conainer-textbox{
+    margin-right:100px;
+    margin-bottom:50px;
+    margin-top:30px;
+    height:55px;
+    padding:0px;
+    background-color:rgb(206,202,197);
+    width: 250px
+
+}
