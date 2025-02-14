@@ -3,8 +3,8 @@ function initializeSearch() {
   const searchResultDiv = document.querySelector(".search-result");
   const container = document.querySelector(".container");
   let searchQuery = "";
-  const APP_ID = "5d4481e3";
-  const APP_key = "eb95f861097cc96f9bd84ba796b8baa1";
+  const APP_ID = "your_id";
+  const APP_key = "your_api_key";
 
   // Start profiling
   console.time("initializeSearch");
